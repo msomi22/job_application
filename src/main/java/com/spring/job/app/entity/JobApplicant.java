@@ -3,31 +3,47 @@
  */
 package com.spring.job.app.entity;
 
-import java.time.ZonedDateTime;
 import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author peter
  *
  */
 @Entity
+@Table(name="jobapplicant")  
 public class JobApplicant {
 	
 	@Id
+	@Column(name="id")
 	private String id;
 	
-	@Column(name="date_created")
-	private ZonedDateTime date_created;
+	//@Temporal(TemporalType.TIMESTAMP)
+	//@Column(name="date_created", columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
+	//@Temporal(TemporalType.TIMESTAMP)
+	//@Column(name="date_created")
+	//private ZonedDateTime date_created;
 	
+	@Column(name="first_name")
 	private String first_name;
+	
+	@Column(name="last_name")
 	private String last_name;
+	
+	@Column(name="email")
 	private String email;
+	
+	@Column(name="phone")
 	private String phone;
+	
+	@Column(name="education_level")
 	private String education_level;
+	
+	@Column(name="years_of_experience")
 	private String years_of_experience;
 
 	public JobApplicant() {
@@ -42,13 +58,13 @@ public class JobApplicant {
 		this.id = id;
 	}
 
-	public ZonedDateTime getDate_created() {
+	/*public ZonedDateTime getDate_created() {
 		return date_created;
 	}
 
 	public void setDate_created(ZonedDateTime date_created) {
 		this.date_created = date_created;
-	}
+	}*/
 
 	public String getFirst_name() {
 		return first_name;
@@ -97,12 +113,20 @@ public class JobApplicant {
 	public void setYears_of_experience(String years_of_experience) {
 		this.years_of_experience = years_of_experience;
 	}
-
+	
 	@Override
+	public String toString() {
+		return "JobApplicant [id=" + id  + ", first_name=" + first_name
+				+ ", last_name=" + last_name + ", email=" + email + ", phone=" + phone + ", education_level="
+				+ education_level + ", years_of_experience=" + years_of_experience + "]";
+	}
+
+
+	/*@Override
 	public String toString() {
 		return "JobApplicant [id=" + id + ", date_created=" + date_created + ", first_name=" + first_name
 				+ ", last_name=" + last_name + ", email=" + email + ", phone=" + phone + ", education_level="
 				+ education_level + ", years_of_experience=" + years_of_experience + "]";
 	}
-
+*/
 }
