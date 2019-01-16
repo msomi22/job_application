@@ -25,8 +25,26 @@ public class ApplicantController {
 	 * @param phone
 	 * @return
 	 */
+	@RequestMapping(path="/getall", method=RequestMethod.GET)
+	public Object getApplicants() {
+		System.out.println("***********");
+		try {
+			//TODO validation plus throw
+			return ResponseEntity.ok(repo.findAll());  
+		}catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+		}
+
+	}
+	
+	/**
+	 * 
+	 * @param phone
+	 * @return
+	 */
 	@RequestMapping(path="/get", method=RequestMethod.GET)
 	public Object getApplicant(@RequestParam(value="phone", defaultValue="0718953974") String phone) {
+		System.out.println("***********->" + phone);
 		try {
 			//TODO validation plus throw
 			return ResponseEntity.ok(repo.findByPhone(phone)); 

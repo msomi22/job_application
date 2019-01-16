@@ -14,3 +14,5 @@ insert into job
 values('5a750d1c-1976-11e9-ab14-d663bd873d92','Backend Dev', 'Backend Developer','API Engineer','3 and above','Graduate','Available','2019-01-01','2019-01-01 11:00:00','2019-01-01 12:00:00','2019-01-01 10:00:00'),
 ('6a750d1c-1976-11e9-ab14-d663bd873d93','Data Scientist', 'Data Scientist/Engineer','Data Engineer','2 and above','Graduate','Available','2019-01-01','2019-01-01 11:00:00','2019-01-01 12:00:00','2019-01-01 10:00:00'),
 ('7a750d1c-1976-11e9-ab14-d663bd873d94','Fronted Dev', 'Fronted Developer','UI/UX','2 and above','Graduate','Available','2019-01-01','2019-01-01 11:00:00','2019-01-01 12:00:00','2019-01-01 10:00:00');
+
+
