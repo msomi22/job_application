@@ -3,6 +3,7 @@
  */
 package com.spring.job.app.entity;
 
+import java.time.ZonedDateTime;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -22,11 +23,8 @@ public class JobApplicant {
 	@Column(name="id")
 	private String id;
 	
-	//@Temporal(TemporalType.TIMESTAMP)
-	//@Column(name="date_created", columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
-	//@Temporal(TemporalType.TIMESTAMP)
-	//@Column(name="date_created")
-	//private ZonedDateTime date_created;
+	@Column(name="date_created")
+	private ZonedDateTime date_created;
 	
 	@Column(name="first_name")
 	private String first_name;
@@ -58,13 +56,13 @@ public class JobApplicant {
 		this.id = id;
 	}
 
-	/*public ZonedDateTime getDate_created() {
+	public ZonedDateTime getDate_created() {
 		return date_created;
 	}
 
 	public void setDate_created(ZonedDateTime date_created) {
 		this.date_created = date_created;
-	}*/
+	}
 
 	public String getFirst_name() {
 		return first_name;
@@ -114,19 +112,12 @@ public class JobApplicant {
 		this.years_of_experience = years_of_experience;
 	}
 	
+
 	@Override
-	public String toString() {
-		return "JobApplicant [id=" + id  + ", first_name=" + first_name
-				+ ", last_name=" + last_name + ", email=" + email + ", phone=" + phone + ", education_level="
-				+ education_level + ", years_of_experience=" + years_of_experience + "]";
-	}
-
-
-	/*@Override
 	public String toString() {
 		return "JobApplicant [id=" + id + ", date_created=" + date_created + ", first_name=" + first_name
 				+ ", last_name=" + last_name + ", email=" + email + ", phone=" + phone + ", education_level="
 				+ education_level + ", years_of_experience=" + years_of_experience + "]";
 	}
-*/
+
 }
