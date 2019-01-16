@@ -1,4 +1,4 @@
-package com.hackerthon.safaricom;
+package com.spring.job.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
