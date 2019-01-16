@@ -13,6 +13,7 @@
 	<artifactId>JobApplication</artifactId>
 	<version>1.0</version>
 	<name>JobApplication</name>
+	<packaging>jar</packaging>
 	<description>JobApplication project for Spring Boot</description>
 
 	<properties>
