@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.hackerthon.safaricom;
+package com.spring.job.app;
 
 import org.springframework.stereotype.Repository;
 

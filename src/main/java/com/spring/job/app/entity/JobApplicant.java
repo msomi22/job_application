@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.hackerthon.safaricom.entity;
+package com.spring.job.app.entity;
 
 import java.time.ZonedDateTime;
 import java.util.UUID;

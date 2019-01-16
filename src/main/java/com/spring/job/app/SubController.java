@@ -1,4 +1,4 @@
-package com.hackerthon.safaricom;
+package com.spring.job.app;
 
 public class SubController {
 

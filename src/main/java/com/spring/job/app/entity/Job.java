@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.hackerthon.safaricom.entity;
+package com.spring.job.app.entity;
 
 import java.sql.Date;
 import java.sql.Timestamp;
